@@ -13151,7 +13151,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[107]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13181,7 +13181,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[107]:</div>
+    <div class="prompt output_prompt">Out[1]:</div>
 
 
 
@@ -13480,7 +13480,7 @@ VI. <a href="#conclusions">Extras &amp; Concluding</a></p>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f469ba6f9b0&gt;]], dtype=object)</pre>
+<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f4886779978&gt;]], dtype=object)</pre>
 </div>
 
 </div>
@@ -14306,7 +14306,7 @@ Your top_20 looks like the solution list! Nice job.
 <div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">user_item</span><span class="o">.</span><span class="n">index</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">user_item</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14323,12 +14323,125 @@ Your top_20 looks like the solution list! Nice job.
 
 
 
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="output_text output_subarea output_execute_result">
-<pre>Int64Index([   1,    2,    3,    4,    5,    6,    7,    8,    9,   10,
-            ...
-            5140, 5141, 5142, 5143, 5144, 5145, 5146, 5147, 5148, 5149],
-           dtype=&#39;int64&#39;, name=&#39;user_id&#39;, length=5149)</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>article_id</th>
+      <th>0.0</th>
+      <th>100.0</th>
+      <th>1000.0</th>
+      <th>1004.0</th>
+      <th>1006.0</th>
+      <th>1008.0</th>
+      <th>101.0</th>
+      <th>1014.0</th>
+      <th>1015.0</th>
+      <th>1016.0</th>
+      <th>...</th>
+      <th>977.0</th>
+      <th>98.0</th>
+      <th>981.0</th>
+      <th>984.0</th>
+      <th>985.0</th>
+      <th>986.0</th>
+      <th>990.0</th>
+      <th>993.0</th>
+      <th>996.0</th>
+      <th>997.0</th>
+    </tr>
+    <tr>
+      <th>user_id</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>...</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>2 rows × 714 columns</p>
+</div>
 </div>
 
 </div>
@@ -14361,11 +14474,11 @@ Your top_20 looks like the solution list! Nice job.
     <span class="c1"># compute similarity of each user to the provided user</span>
     <span class="n">dot_value</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">user_item</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
-        <span class="n">dot_value</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">user_item</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">user_id</span><span class="p">,</span> <span class="p">:],</span> <span class="n">user_item</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">,:]))</span>
+        <span class="n">dot_value</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">user_id</span><span class="p">,</span> <span class="p">:],</span> <span class="n">user_item</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">,:]))</span>
 
     <span class="c1"># sort by similarity &amp; # create list of just the ids</span>
-    <span class="n">id_list</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;user_id&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">user_item</span><span class="o">.</span><span class="n">index</span><span class="p">),</span>
-                       <span class="s1">&#39;dot_value&#39;</span><span class="p">:</span> <span class="n">dot_value</span><span class="p">})</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;dot_value&#39;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[</span><span class="s1">&#39;user_id&#39;</span><span class="p">]</span>
+    <span class="n">id_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;user_id&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">user_item</span><span class="o">.</span><span class="n">index</span><span class="p">),</span>
+                            <span class="s1">&#39;dot_value&#39;</span><span class="p">:</span> <span class="n">dot_value</span><span class="p">})</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;dot_value&#39;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)[</span><span class="s1">&#39;user_id&#39;</span><span class="p">])</span>
    
     <span class="c1"># remove the own user&#39;s id</span>
     <span class="n">most_similar_users</span> <span class="o">=</span> <span class="p">[]</span>
@@ -14407,9 +14520,9 @@ Your top_20 looks like the solution list! Nice job.
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The 10 most similar users to user 1 are: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-The 5 most similar users to user 3933 are: [1, 2, 3, 4, 5]
-The 3 most similar users to user 46 are: [1, 2, 3]
+<pre>The 10 most similar users to user 1 are: [3933, 23, 3782, 203, 4459, 3870, 131, 4201, 46, 5041]
+The 5 most similar users to user 3933 are: [1, 23, 3782, 203, 4459]
+The 3 most similar users to user 46 are: [4201, 3782, 23]
 </pre>
 </div>
 </div>
@@ -14577,7 +14690,7 @@ The 3 most similar users to user 46 are: [1, 2, 3]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[78]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_article_names</span><span class="p">(</span><span class="n">article_ids</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">):</span>
@@ -14642,15 +14755,31 @@ The 3 most similar users to user 46 are: [1, 2, 3]
 <span class="sd">    </span>
 <span class="sd">    &#39;&#39;&#39;</span>
     <span class="c1"># Your code here</span>
-    <span class="n">user</span> <span class="o">=</span> <span class="n">find_similar_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
+<span class="c1">#     user = find_similar_users(user_id)</span>
+<span class="c1">#     resc = []</span>
+<span class="c1">#     for i in range(len(user)):</span>
+<span class="c1">#         article = get_user_articles(user[i])[0]</span>
+<span class="c1">#         for j in range(len(article)):</span>
+<span class="c1">#             if article[j] not in resc:</span>
+<span class="c1">#                 resc.append(article[j])</span>
+<span class="c1">#             if len(resc) == m:</span>
+<span class="c1">#                 return resc # return your recommendations for this user_id</span>
+    <span class="n">article_ids</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
+    <span class="n">most_similar_users</span>  <span class="o">=</span> <span class="n">find_similar_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
+
     <span class="n">resc</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">user</span><span class="p">)):</span>
-        <span class="n">article</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">user</span><span class="p">[</span><span class="n">i</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span>
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">article</span><span class="p">)):</span>
-            <span class="k">if</span> <span class="n">article</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">resc</span><span class="p">:</span>
-                <span class="n">resc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">article</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
-            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">resc</span><span class="p">)</span> <span class="o">==</span> <span class="n">m</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">resc</span> <span class="c1"># return your recommendations for this user_id    </span>
+    <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">most_similar_users</span><span class="p">:</span>
+        <span class="n">ids</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+        <span class="n">article_not_seen</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">setdiff1d</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">ids</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">article_ids</span><span class="p">))</span>
+        <span class="n">article_not_recs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">setdiff1d</span><span class="p">(</span><span class="n">article_not_seen</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">resc</span><span class="p">))</span>
+        <span class="n">resc</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">article_not_recs</span><span class="p">))</span>
+        
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">resc</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">m</span><span class="p">:</span>
+            <span class="k">break</span>
+            
+    <span class="n">resc</span> <span class="o">=</span> <span class="n">resc</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
+    
+    <span class="k">return</span> <span class="n">resc</span>
 </pre></div>
 
     </div>
@@ -14660,7 +14789,7 @@ The 3 most similar users to user 46 are: [1, 2, 3]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[79]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check Results</span>
@@ -14677,22 +14806,22 @@ The 3 most similar users to user 46 are: [1, 2, 3]
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[33]:</div>
+    <div class="prompt output_prompt">Out[79]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;using deep learning to reconstruct high-resolution audio&#39;,
- &#39;build a python app on the streaming analytics service&#39;,
- &#39;gosales transactions for naive bayes model&#39;,
- &#39;healthcare python streaming application demo&#39;,
- &#39;use r dataframes &amp; ibm watson natural language understanding&#39;,
- &#39;use xgboost, scikit-learn &amp; ibm watson machine learning apis&#39;,
- &#39;machine learning for the enterprise.&#39;,
- &#39;adolescent fertility rate (births per 1,000 women ages 15-19), worldwide&#39;,
- &#39;airbnb data for analytics: amsterdam calendar&#39;,
- &#39;tensorflow quick tips&#39;]</pre>
+<pre>[&#39;recommender systems: approaches &amp; algorithms&#39;,
+ &#39;1448    i ranked every intro to data science course on...\nName: title, dtype: object&#39;,
+ &#39;data tidying in data science experience&#39;,
+ &#39;a tensorflow regression model to predict house values&#39;,
+ &#39;520    using notebooks with pixiedust for fast, flexi...\nName: title, dtype: object&#39;,
+ &#39;airbnb data for analytics: mallorca reviews&#39;,
+ &#39;airbnb data for analytics: vancouver listings&#39;,
+ &#39;analyze facebook data using ibm watson and watson studio&#39;,
+ &#39;analyze accident reports on amazon emr spark&#39;,
+ &#39;analyze energy consumption in buildings&#39;]</pre>
 </div>
 
 </div>
@@ -14703,7 +14832,7 @@ The 3 most similar users to user 46 are: [1, 2, 3]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Test your functions here - No need to change this code - just run this cell</span>
@@ -14788,7 +14917,7 @@ The 3 most similar users to user 46 are: [1, 2, 3]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span> <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">user_item</span><span class="o">=</span><span class="n">user_item</span><span class="p">):</span>
@@ -14856,18 +14985,72 @@ The 3 most similar users to user 46 are: [1, 2, 3]
 <span class="sd">    before choosing those with fewer total interactions. </span>
 <span class="sd">   </span>
 <span class="sd">    &#39;&#39;&#39;</span>
-    <span class="c1"># get top neighbors</span>
-    <span class="n">neighbors_df</span> <span class="o">=</span> <span class="n">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
-    <span class="n">top_neighbors</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">neighbors_df</span><span class="p">[:</span><span class="n">m</span><span class="p">][</span><span class="s1">&#39;neighbor_id&#39;</span><span class="p">])</span>
+    <span class="n">article_ids</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span>
+    <span class="n">most_similar_users</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">get_top_sorted_users</span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span><span class="o">.</span><span class="n">neighbor_id</span><span class="p">)</span>
     
     <span class="n">resc</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">top_neighbors</span><span class="p">:</span>
-        <span class="n">article_id</span> <span class="o">=</span> <span class="n">user_item</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-        <span class="n">resc</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="nb">str</span><span class="p">(</span><span class="n">x_id</span><span class="p">)</span> <span class="k">for</span> <span class="n">x_id</span> <span class="ow">in</span> <span class="n">article_id</span><span class="p">[</span><span class="n">article_id</span><span class="o">==</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
+    
+    <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">most_similar_users</span><span class="p">:</span>
+        <span class="n">ids</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">get_user_articles</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+        <span class="n">article_not_seen</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">setdiff1d</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">ids</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">article_ids</span><span class="p">))</span>
+        <span class="n">article_not_recs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">setdiff1d</span><span class="p">(</span><span class="n">article_not_seen</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">resc</span><span class="p">))</span>
+        <span class="n">resc</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">article_not_recs</span><span class="p">))</span>
         
-    <span class="n">resc</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">resc</span><span class="p">[:</span><span class="n">m</span><span class="p">]))</span>
-    <span class="n">rec_names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;article_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">resc</span><span class="p">)][</span><span class="s1">&#39;title&#39;</span><span class="p">]))</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">resc</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">m</span><span class="p">:</span>
+            <span class="k">break</span>
+            
+    <span class="n">resc</span> <span class="o">=</span> <span class="n">resc</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
+    <span class="n">rec_names</span> <span class="o">=</span> <span class="n">get_article_names</span><span class="p">(</span><span class="n">resc</span><span class="p">)</span>
+
     <span class="k">return</span> <span class="n">resc</span><span class="p">,</span> <span class="n">rec_names</span> <span class="c1"># return your recommendations for this user_id  </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># def user_user_recs_part2(user_id, m=10):</span>
+<span class="c1">#     &#39;&#39;&#39;</span>
+<span class="c1">#     INPUT:</span>
+<span class="c1">#     user_id - (int) a user id</span>
+<span class="c1">#     m - (int) the number of recommendations you want for the user</span>
+    
+<span class="c1">#     OUTPUT:</span>
+<span class="c1">#     recs - (list) a list of recommendations for the user by article id</span>
+<span class="c1">#     rec_names - (list) a list of recommendations for the user by article title</span>
+    
+<span class="c1">#     Description:</span>
+<span class="c1">#     Loops through the users based on closeness to the input user_id</span>
+<span class="c1">#     For each user - finds articles the user hasn&#39;t seen before and provides them as recs</span>
+<span class="c1">#     Does this until m recommendations are found</span>
+    
+<span class="c1">#     Notes:</span>
+<span class="c1">#     * Choose the users that have the most total article interactions </span>
+<span class="c1">#     before choosing those with fewer article interactions.</span>
+
+<span class="c1">#     * Choose articles with the articles with the most total interactions </span>
+<span class="c1">#     before choosing those with fewer total interactions. </span>
+   
+<span class="c1">#     &#39;&#39;&#39;</span>
+<span class="c1">#     # get top neighbors</span>
+<span class="c1"># #     neighbors_df = get_top_sorted_users(user_id)</span>
+<span class="c1"># #     top_neighbors = list(neighbors_df[:m][&#39;neighbor_id&#39;])</span>
+<span class="c1">#     resc = []</span>
+<span class="c1"># #     for i in top_neighbors:</span>
+<span class="c1"># #         article_id = user_item.loc[i]</span>
+<span class="c1"># #         resc.extend([str(x_id) for x_id in article_id[article_id==1].index])</span>
+        
+<span class="c1"># #     resc = list(set(resc[:m]))</span>
+<span class="c1"># #     rec_names = list(set(df[df[&#39;article_id&#39;].isin(resc)][&#39;title&#39;]))</span>
+
+
+<span class="c1">#     return resc, rec_names # return your recommendations for this user_id  </span>
     
 </pre></div>
 
@@ -14878,7 +15061,33 @@ The 3 most similar users to user 46 are: [1, 2, 3]
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># get_top_sorted_users(1)[&#39;neighbor_id&#39;].values</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># get_user_articles(1)[0]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[77]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Quick spot check - don&#39;t change this code - just use it to test your functions</span>
@@ -14905,10 +15114,10 @@ The 3 most similar users to user 46 are: [1, 2, 3]
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The top 10 recommendations for user 20 are the following article ids:
-[&#39;1053.0&#39;, &#39;1271.0&#39;, &#39;727.0&#39;, &#39;1320.0&#39;, &#39;53.0&#39;, &#39;232.0&#39;, &#39;1296.0&#39;, &#39;793.0&#39;, &#39;495.0&#39;, &#39;1186.0&#39;]
+[&#39;1053.0&#39;, &#39;1186.0&#39;, &#39;1271.0&#39;, &#39;1296.0&#39;, &#39;495.0&#39;, &#39;53.0&#39;, &#39;727.0&#39;, &#39;793.0&#39;, &#39;89.0&#39;, &#39;981.0&#39;]
 
 The top 10 recommendations for user 20 are the following article names:
-[&#39;connect to db2 warehouse on cloud and db2 using scala&#39;, &#39;10 powerful features on watson data platform, no coding necessary&#39;, &#39;from python nested lists to multidimensional numpy arrays&#39;, &#39;self-service data preparation with ibm data refinery&#39;, &#39;access mysql with python&#39;, &#39;housing (2015): united states demographic measures&#39;, &#39;top 10 machine learning algorithms for beginners&#39;, &#39;introducing streams designer&#39;, &#39;customer demographics and sales&#39;, &#39;fortune 100 companies&#39;]
+[&#39;access mysql with python&#39;, &#39;connect to db2 warehouse on cloud and db2 using scala&#39;, &#39;customer demographics and sales&#39;, &#39;fortune 100 companies&#39;, &#39;top 10 machine learning algorithms for beginners&#39;, &#39;introducing streams designer&#39;, &#39;from python nested lists to multidimensional numpy arrays&#39;, &#39;10 powerful features on watson data platform, no coding necessary&#39;, &#39;top 20 r machine learning and data science packages&#39;, &#39;super fast string matching in python&#39;]
 </pre>
 </div>
 </div>
@@ -15391,7 +15600,7 @@ The top 10 recommendations for user 20 are the following article names:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Provide your response here.</strong></p>
+<p><strong>This dataset doesn't have any missing value. The lesson has a data structure with numeric values representing a rating and nulls representing non-interaction.</strong></p>
 
 </div>
 </div>
